@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="87BB10B2FA94474050543712D6986C2D8F69E92FE1A1C0C989DFEB9B15B873AE6F2B98047E7EDAA07689254A067DA99CF1296C5BFDA94300037F9583344EE21A" Timestamp="1D5E896973051D7" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="7.1.0.49153" Version="7.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="7.1.0.49153" Version="7.1.0.49153" />
+		<ApplicationVersionInfo Build="7.1.0.50148" Name="LabVIEW NXG" Version="4.0.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="3" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="4" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+					<FileNameText Attached="[bool]True" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Calculate CRC" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+						<FontSetting FontFamily="Verdana" FontSize="6" Id="8" />
+					</FileNameText>
+				</IconTemplate>
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="9" ListViewHeight="70" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="43" />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" ListViewHotspot="150 50" Parameter="42" />
+			<ConnectorPaneTerminal Hotspot="40 15" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0">
+			<NumericText BaseName="[string]Numeric" Enabled="[bool]True" Height="[float]24" Id="44" Interval="[ushort]1" IsReadOnly="[bool]True" Label="[UIModel]45" Left="[float]596" Maximum="[ushort]65535" Minimum="[ushort]0" RadixBase="[RadixBase]Hexadecimal" TabIndex="[int]0" Top="[float]228" Value="{DataItemBinding Id=42}" ValueFormatter="[string]Hexadecimal, Uppercase, Unsigned" ValueType="[Type]UInt16" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="45" LabelOwner="[UIModel]44" Left="[float]596" Text="[string]Output" Top="[float]208" Width="[float]38" xmlns="http://www.ni.com/PanelCommon" />
+			<ArrayViewer ArrayElement="[UIModel]47" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Enabled="[bool]True" Height="[float]288" Id="46" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]48" Left="[float]388" Orientation="[SMOrientation]Vertical" Rows="[int]10" TabIndex="[int]1" Top="[float]116" Value="{DataItemBinding Id=43}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]104" xmlns="http://www.ni.com/PanelCommon">
+				<p.DefaultElementValue>0</p.DefaultElementValue>
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="47" Interval="[byte]1" IsReadOnly="[bool]False" RadixBase="[RadixBase]Hexadecimal" ValueFormatter="[string]Hexadecimal, Uppercase, Unsigned" ValueType="[Type]UInt8" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			</ArrayViewer>
+			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="48" LabelOwner="[UIModel]46" Left="[float]388" Text="[string]Head status_3" Top="[float]96" Width="[float]74" xmlns="http://www.ni.com/PanelCommon" />
+		</FrontPanelUnplacedItems>
+		<BlockDiagram Id="12">
+			<ForLoop Bounds="548 868 330 180" DiagramId="16" Id="15">
+				<LoopIteration Bounds="100 90 15 15" Id="23" />
+				<Wire Id="24" Joints="N(20:i0)|(6,130) h(5) v(-5) N(77d6261341924ff5aac54d4547c130e1:L4)|(235,125)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="25" Joints="N(77d6261341924ff5aac54d4547c130e1:R1)|(275,95) v(10) h(2) v(20) h(36) v(5) N(19:16)|(318,130)" xmlns="http://www.ni.com/PlatformFramework" />
+				<IsEqualTo0 Bounds="155 75 30 30" Id="26" />
+				<Wire Id="27" Joints="N(23:Output)|(115,95) h(5) v(-5) N(26:x)|(155,90)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="28" Joints="N(26:x = 0?)|(185,90) h(5) v(5) N(77d6261341924ff5aac54d4547c130e1:L1)|(235,95)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Literal Bounds="35 40 165 15" DataType="UInt16" Id="29" Label="30" xmlns="http://www.ni.com/MocCommon">
+					<p.Data>65535</p.Data>
+					<RingBehavior AllowNonSequentialValues="True" ValueFormatter="LV:G6">
+						<RingConstantInfo DisplayValue="CRC-16-CCITT (0x1D0F)" ValueType="UInt16">
+							<p.Value>7439</p.Value>
+						</RingConstantInfo>
+						<RingConstantInfo DisplayValue="CRC-16-CCITT (0xFFFF)" ValueType="UInt16">
+							<p.Value>65535</p.Value>
+						</RingConstantInfo>
+						<RingConstantInfo DisplayValue="CRC-16-CCITT (XModem)" ValueType="UInt16">
+							<p.Value>0</p.Value>
+						</RingConstantInfo>
+					</RingBehavior>
+				</Literal>
+				<NodeLabel AttachedTo="29" Bounds="35 22 30 15" Id="30" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>CRC-CCITT Type</p.Text>
+				</NodeLabel>
+				<Wire Id="31" Joints="N(29:Out)|(200,45) h(15) v(25) h(15) v(10) h(-5) v(5) N(77d6261341924ff5aac54d4547c130e1:L0)|(235,85)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="32" Joints="N(22:i0)|(6,45) h(5) v(60) N(77d6261341924ff5aac54d4547c130e1:L2)|(235,105)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="33" Joints="N(77d6261341924ff5aac54d4547c130e1:R0)|(275,85) h(38) v(-40) N(21:16)|(318,45)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="34" Joints="N(18:i0)|(6,20) h(5) v(95) N(77d6261341924ff5aac54d4547c130e1:L3)|(235,115)" xmlns="http://www.ni.com/PlatformFramework" />
+				<MethodCall Bounds="235 80 40 50" Id="77d6261341924ff5aac54d4547c130e1" ResolveFailedHint="&quot;\\\\EI-Data1\\Users\\JoeDaly\\Documents\\LabVIEW Projects\\Kirwan board ultrasinc test\\Kirwan tester.gcomp\\CRC-CCITT-16.gvi&quot;" Signature="@288d5c8fc5394e75923b94df98bba7de" Target="Kirwan tester::CRC-CCITT-16.gvi" xmlns="http://www.ni.com/MocCommon">
+					<p.MethodDeclaration>
+						<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+							<Parameter Id="L0" Desc="CRC-CCITT Type" />
+							<Parameter Id="L1" Desc="Reset" />
+							<Parameter Id="L2" Desc="CRC In" />
+							<Parameter Id="L3" Desc="Data" />
+							<Parameter Id="L4" Desc="error in (no error)" />
+							<Parameter Id="R0" Desc="CRC" />
+							<Parameter Id="R1" Desc="error out" />
+						</MethodDeclaration>
+					</p.MethodDeclaration>
+					<Terminal DataType="UInt16" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Boolean" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="UInt16" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="UInt8" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Error" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="UInt16" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Error" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				</MethodCall>
+				<LoopCount Bounds="1 1 15 15" Docking="Left" Id="17" Terminals="15, 16" />
+				<LoopTunnel AutoIndex="True" Bounds="-5 17 13 10" Docking="Left" Id="18" Terminals="o0=39, i0=34" TunnelMode="0" />
+				<RightShiftRegister Bounds="320 127 13 10" Docking="Right" Id="19" Terminals="15, 16=25" />
+				<LeftShiftRegister Bounds="-5 127 13 10" Docking="Left" Id="20" RightRegister="19" Terminals="o0, i0=24" />
+				<RightShiftRegister Bounds="320 42 13 10" Docking="Right" Id="21" Terminals="15=37, 16=33" />
+				<LeftShiftRegister Bounds="-5 42 13 10" Docking="Left" Id="22" RightRegister="21" Terminals="o0, i0=32" />
+			</ForLoop>
+			<DataAccessor Bounds="945 910 40 15" DataItem="42" Id="36" Label="40" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="UInt16" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<Wire Id="37" Joints="N(21:15)|(881,915) N(36:Value)|(948,915)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="450 885 40 15" DataItem="43" Id="38" Label="41" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="UInt8[]" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<Wire Id="39" Joints="N(38:Value)|(490,890) N(18:o0)|(543,890)" xmlns="http://www.ni.com/PlatformFramework" />
+			<NodeLabel AttachedTo="36" Bounds="990 910 53 14" Id="40" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Output_2</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="38" Bounds="365 885 80 14" Id="41" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Head status_3</p.Text>
+			</NodeLabel>
+		</BlockDiagram>
+		<NativeFrontPanel AllowMaximize="[bool]False" EnforceMaximumSize="[bool]True" Height="[float]1600" Id="13" Left="[float]0" MaxHeight="[float]1600" MaxWidth="[float]2000" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]None">
+			<PanelExecutionWindow Id="14" />
+		</NativeFrontPanel>
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="0" DataType="UInt16" Id="42" Name="Output_2" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="0" DataType="UInt8[]" Id="43" Name="Head status_3" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>null</p.DefaultValue>
+		</DataItem>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="288d5c8fc5394e75923b94df98bba7de">
+			<Attributed AttributedType="@4a443e9affa44697882c3bbb70d9fb95">
+				<AttributeValues>
+					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]50" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="4a443e9affa44697882c3bbb70d9fb95">
+			<Function Id="1" IsStatic="True" IsConstructor="False" Name="CRC-CCITT-16.gvi" ReturnType="Void" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@141adcae5ae946e58087c2acda090f35">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]CRC-CCITT Type" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@da98624417264751970aac3da4418257">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Reset" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@b19d50bc9d364fba9b51d30fca909670">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]CRC In" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@2340b54d89a3475d86e1c9c42ece2570">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Data" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@a97e571f85f44aa7a89db225d87a128c">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]error in (no error)" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@24da7db51bfe4a088052a976cdf386fb">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]CRC" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@a6e8ce916d874cd09ea55cfa061424e3">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]error out" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
+		</p.TypeReference>
+		<p.TypeReference TypeId="141adcae5ae946e58087c2acda090f35">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L0" DataType="UInt16" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="da98624417264751970aac3da4418257">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L1" DataType="Boolean" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="b19d50bc9d364fba9b51d30fca909670">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L2" DataType="UInt16" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="2340b54d89a3475d86e1c9c42ece2570">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L3" DataType="UInt8" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="a97e571f85f44aa7a89db225d87a128c">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L4" DataType="Error" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="24da7db51bfe4a088052a976cdf386fb">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R0" DataType="UInt16" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="a6e8ce916d874cd09ea55cfa061424e3">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R1" DataType="Error" />
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+	<IconTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.IconModel Target="Kirwan tester::CRC-CCITT-16.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 50">
+						<IconPanel Height="[float]50" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]50" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Height="[float]46" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]CRC-CCITT-16" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+									<FontSetting FontFamily="Verdana" FontSize="6" />
+								</FileNameText>
+							</IconTemplate>
+							<IconTemplate Height="[float]50" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]Kirwan tester.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+	</IconTable>
+</SourceFile>
